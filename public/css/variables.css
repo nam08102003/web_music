@@ -1,0 +1,14 @@
+:root {
+    --color-primary: #fff;
+    --color-background: rgba(255, 255, 255, 0.1);
+    --color-singer: rgba(255, 255, 255, 0.7);
+    --color-gradient: rgba(107, 4, 38, 0.6);
+    --color-bg-overlay: -webkit-linear-gradient( 90deg, rgb(22, 26, 46) 0%, rgb(237, 63, 179) 0%, rgb(248, 71, 62) 0%, rgba(254, 121, 69, 0.4) 100%);
+    --font-size-primary: 16px;
+    --font-size-secondery: 18px;
+    --font-text: 'Roboto', sans-serif;
+    --font-menu: 'Oswald';
+    --font-money: 'Lato', sans-serif;
+    --background-a: linear-gradient(to right, #f8473e, #fe7945, #ff8d61, #ff3b1b);
+    --color-hover-image: #fa5840;
+}
