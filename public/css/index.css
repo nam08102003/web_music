@@ -1143,7 +1143,7 @@
     padding-bottom: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center
 }
 .content-main .footer-content .footer-content-bottom .icon-contacts .icon-child  {
     width: 40px;
@@ -1153,7 +1153,7 @@
     border-radius: 20px 20px;
     text-align: center;
     cursor: pointer;
-    margin-left: 5px;
+    margin: 5px 10px;
     transition: all 0.3s ease-in-out;
 }
 .content-main .footer-content .footer-content-bottom .icon-contacts .icon-child i {
@@ -1513,12 +1513,20 @@
     color: var(--color-primary);
     font-weight: 500;
     line-height: 24px;
+    text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-line-clamp: 2;
 }
 .music-controller .music-controller-main .music-controller-left .music-controller-playing a {
     font-size: var(--font-size-primary);
     color: var( --color-singer);
     font-weight: 400;
     line-height: 24px;
+    text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-line-clamp: 1;
 }
 .music-controller .music-controller-main .music-controller-left i {
     margin-left: 85px;
@@ -2200,7 +2208,67 @@
         width: 100%;
         height: 495px;
     }
+
+    .content-main .body-content .music-events .music-event-item {
+        width: 120px !important;
+        margin-right: 10px !important;
+    }
+
+    .content-main .footer-content .footer-content-bottom .icon-contacts {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .music-controller .music-controller-main .music-controller-left {
+        padding-left: 5px;
+    }
+
+    .music-controller .music-controller-main .music-controller-left > img {
+        flex: 30%;
+    }
+
+    .music-controller .music-controller-main .music-controller-left .music-controller-playing {
+        padding-left: 5px;
+        width: 100px;
+    }
     
+    .music-controller .music-controller-main .music-controller-left .music-controller-playing h3 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .music-controller .music-controller-main .music-controller-left .music-controller-playing a {
+        font-size: 10px;
+    }
+
+    .music-controller .music-controller-main .music-controller-left i {
+        display: none;
+    }
+
+    .music-controller .music-controller-main .music-controller-center .music-controller-icon {
+        margin: 0;
+    }
+
+    .music-controller .music-controller-main .music-controller-center i {
+        font-size: 12px;
+        padding: 0 6px;
+    }
+
+    .music-controller .music-controller-main .music-controller-right > i {
+        display: none;
+    }
+
+    .music-controller .music-controller-main .music-controller-right .music-controller-playing-time {
+        padding: 0 8px;
+    }
+
+    .music-controller .music-controller-main .music-controller-right .music-controller-playing-time span{
+        font-size: 12px;
+    }
+
+    .music-controller .music-controller-main .music-controller-right .music-controller-playing-volume .sound-bar {
+        display: none;
+    }
 
 
 
